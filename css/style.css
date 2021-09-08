@@ -1,1 +1,56 @@
- 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.dflex {
+    display: flex;
+    /* align-items: center; */
+    justify-content:flex-start;
+    padding: 0 10px;
+}
+
+nav {
+    background: #131921;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    height: 60px;
+}
+
+.left-side {
+    margin-left: 20px;
+    margin-bottom: -5px;
+    width: 243px;
+    /* padding: 6px 8px 0 0; */
+}
+
+/* Sprite */
+.sprite-logo {
+	background: url('../images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -51px;
+	width: 96px;
+	height: 29px;
+}
+
+.sprite-loc {
+	background: url('../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_ (1).png') no-repeat -142px -758px;
+	width: 29px;
+	height: 33px;
+}
+
+.sprite-search-icon {
+	background: url('../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_ (1).png') no-repeat -20px -580px;
+	width: 42px;
+	height: 42px;
+}
+
+.sprite-flag {
+	background: url('../images/rzrQQdi0aRm6Dap.png') no-repeat 0 -130px;
+	width: 24px;
+	height: 16px;
+}
+
+.down-arrow {
+	background: url('../images/neutral_down_arrow._CB442978120_.png') no-repeat 0 0;
+	width: 20px;
+	height: 15px;}

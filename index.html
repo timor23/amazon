@@ -4,39 +4,76 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css"
+            rel="stylesheet"
+        />
+        <link
+            href="//db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember"
+            rel="stylesheet"
+            type="text/css"
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Document</title>
     </head>
     <body>
-        <nav class="dflex">
-            <a href="#">
-                <div class="sprite-logo"></div>
-            </a>
-            <div class="location dflex">
-                <div class="sprite-loc"></div>
-                <div>
-                    <p>Deliver to</p>
-                    <p>Israel</p>
-                </div>
-            </div>
-            <div class="search-bar dflex">
-                <div class="box">
-                    <div class="dflex">
-                        <button class="all" type="button">
-                            All
-                            <div class="down-arrow"></div>
-                        </button>
-                        <input type="text" />
-                        <button class="search" type="submit">
-                            <div class="sprite-search-icon"></div>
-                        </button>
+        <div class="top-nav dflex">
+            <div class="left-side dflex">
+                <a href="#">
+                    <div class="sprite-logo"></div>
+                </a>
+                <div class="location dflex">
+                    <div class="sprite-loc"></div>
+                    <div>
+                        <p>Deliver to</p>
+                        <p>Israel</p>
                     </div>
                 </div>
             </div>
-            <div class="right-side dflex">
-                <div class="sprite-flag"></div>
+            <div class="search-bar dflex">
+                <button class="all dflex" type="button">
+                    <!-- All
+                    <div class="down-arrow"></div> -->
+                    <span>All</span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </button>
+                <input type="text" />
+                <button class="search-button" type="submit">
+                    <div class="sprite-search-icon"></div>
+                </button>
             </div>
+            <div class="right-side dflex">
+                <div class="lang dflex">
+                    <div class="sprite-flag"></div>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
+                <div class="sign-in">
+                    <div>
+                        <p>Hello, Sign in</p>
+                        <p>Accounts & Lists</p>
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="returns">
+                    <div>
+                        <p>Returns</p>
+                        <p>& Orders</p>
+                    </div>
+                </div>
+                <div class="shopping-cart"></div>
+            </div>
+        </div>
+
+        <nav class="bottom-navbar dflex">
+            <ul class="dflex">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Cusromer Service</a></li>
+                <li><a href="#">Registry</a></li>
+                <li><a href="#">Gift Card</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Local Delivery in Israel</a></li>
+            </ul>
         </nav>
     </body>
 </html>

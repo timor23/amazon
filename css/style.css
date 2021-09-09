@@ -37,6 +37,11 @@ h1 {
     color: #CC5142;
 }
 
+.hborder:hover {
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
 .top-nav {
     background: #131921;
     justify-content: center;
@@ -49,24 +54,33 @@ h1 {
 .left-side {
     margin-left: 20px;
     margin-bottom: -5px;
-    width: 12%;
+    width: 16%;
     /* padding: 6px 8px 0 0; */
+    justify-content: space-around;
+}
+
+.left-side div {
+    /* padding: 0 10px; */
 }
 
 .search-bar {
     width: 60%;
+    height: 75%;
     justify-content: stretch;
 }
 
 .search-bar * {
     border: none;
 }
+
 .search-bar .all {
     width: 51px;
     align-items: center;
     border-right: 1px solid;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .search-bar input {
@@ -83,6 +97,9 @@ h1 {
 .right-side {
     justify-content: space-between;
     width: 28%;
+    margin-bottom: -5px;
+    align-items: center;
+
 }
 
 .shopping-cart {
@@ -121,6 +138,7 @@ nav a:hover {
     justify-content: space-between;
     height: 280px;
 }
+
 .pics-preview div{
     flex-direction: column;
     width: 40px;
@@ -157,7 +175,13 @@ nav a:hover {
     background: url(../images/31pK3XMRYoL._AC_US40_.jpg);
 }
 
+.title-section {
+    border-bottom: 1px solid #E7E7E7;
+}
 
+.product-info-center {
+    flex-direction: column;
+}
 
 /* Sprite */
 .sprite-logo {
@@ -168,17 +192,15 @@ nav a:hover {
 }
 
 .sprite-loc {
-    background: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png")
-        no-repeat -142px -758px;
-    width: 29px;
-    height: 33px;
+	background: url('../images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -71px -379px;
+	width: 15px;
+	height: 17px;
 }
 
 .sprite-search-icon {
-    background: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png")
-        no-repeat -20px -580px;
-    width: 42px;
-    height: 42px;
+	background: url('../images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -10px -290px;
+	width: 21px;
+	height: 21px;
 }
 
 .sprite-flag {

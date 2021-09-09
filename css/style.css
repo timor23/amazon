@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,11 +14,27 @@ ul {
 a {
     text-decoration: none;
 }
+
+h1 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
 .dflex {
     display: flex;
     /* align-items: center; */
     /* justify-content:space-between; */
     /* padding: 0 10px; */
+}
+
+.text-links {
+    font-weight: 400;
+    font-size: 14px;
+    color: #007185;
+}
+
+.text-links:hover {
+    color: #CC5142;
 }
 
 .top-nav {
@@ -81,13 +98,66 @@ nav {
     background: #232f3e;
     align-items: center;
     justify-content: space-between;
+    color: #fff;
 }
 
 nav a {
     color: #fff;
-    padding: 10px;
-    margin: 0 5px;
+    padding: 5px;
+    margin:  5px;
 }
+
+nav a:hover {
+    border: 1px solid #fff;
+}
+
+.container {
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.pics-preview {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 280px;
+}
+.pics-preview div{
+    flex-direction: column;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+
+.pics-preview div:hover{
+    border: 1px solid #E77600;
+}
+
+.big-pic {
+    height: 460px;
+    width: 460px;
+    background: url(../images/61j17FjPhtL._AC_SX466_.jpg) no-repeat center ;
+}
+
+.pics-preview div:nth-child(1){
+    background: url(../images/41gT9mzRM8L._AC_US40_.jpg);
+}
+.pics-preview div:nth-child(2){
+    background: url(../images/41-cQZNga6L._AC_US40_.jpg);
+}
+.pics-preview div:nth-child(3){
+    background: url(../images/31zHjKKP0VL._AC_US40_.jpg);
+}
+.pics-preview div:nth-child(4){
+    background: url(../images/41UJCr4PxcL._AC_US40_.jpg);
+}
+.pics-preview div:nth-child(5){
+    background: url(../images/51auquuzbVL._AC_US40_.jpg);
+}
+.pics-preview div:nth-child(6){
+    background: url(../images/31pK3XMRYoL._AC_US40_.jpg);
+}
+
+
 
 /* Sprite */
 .sprite-logo {
@@ -98,14 +168,14 @@ nav a {
 }
 
 .sprite-loc {
-    background: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_ (1).png")
+    background: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png")
         no-repeat -142px -758px;
     width: 29px;
     height: 33px;
 }
 
 .sprite-search-icon {
-    background: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_ (1).png")
+    background: url("../images/nav-sprite-global-2x-hm-dsk-reorg._CB405937547_.png")
         no-repeat -20px -580px;
     width: 42px;
     height: 42px;
@@ -122,4 +192,16 @@ nav a {
         no-repeat -7px -103px;
     width: 10px;
     height: 7px;
+}
+
+.sprite-hamburger {
+	background: url('../images/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png') no-repeat -172px -255px;
+	width: 18px;
+	height: 14px;
+}
+
+.stars-rating {
+	background: url('../images/3-fm1Jbg4IHlyhq.png') no-repeat -84px -28px;
+	width: 80px;
+	height: 15px;
 }

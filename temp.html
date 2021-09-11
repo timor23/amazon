@@ -1,10 +1,105 @@
-<table>
-    <tbody>
-        <tr>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-    </tbody>
-</table>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+        <title>Document</title>
+        <style>
+            .gallery-container {
+                position: relative;
+                flex-direction: column;
+                width: 500px;
+                height: auto;
+                padding-top: 350px;
+                padding-bottom: 15px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                border: 1px #aaaaaa solid;
+            }
+
+            .gallery-fullsize {
+                position: absolute;
+                top: 15px;
+                left: 15px;
+                display: none;
+                height: 460px;
+                width: 460px;
+            }
+
+            .gallery-item {
+                display: inline-block;
+            }
+
+            .gallery-preview:hover ~ img.gallery-fullsize {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="gallery-container dflex">
+            <div class="gallery-item">
+                <img
+                    src="./images/41gT9mzRM8L._AC_US40_.jpg"
+                    class="gallery-preview"
+                />
+                <img
+                    src="./images/61j17FjPhtL._AC_SX466_.jpg"
+                    class="gallery-fullsize"
+                />
+            </div>
+            <div class="gallery-item">
+                <img
+                    src="./images/41-cQZNga6L._AC_US40_.jpg"
+                    class="gallery-preview"
+                />
+                <img
+                    src="./images/61oFzhaGqdL._AC_SX466_.jpg"
+                    class="gallery-fullsize"
+                />
+            </div>
+            <div class="gallery-item">
+                <img
+                    src="./images/31zHjKKP0VL._AC_US40_.jpg"
+                    class="gallery-preview"
+                />
+                <img
+                    src="./images/71Gu4xKCPLL._AC_SX466_.jpg"
+                    class="gallery-fullsize"
+                />
+            </div>
+            <div class="gallery-item">
+                <img
+                    src="./images/41UJCr4PxcL._AC_US40_.jpg"
+                    class="gallery-preview"
+                />
+                <img
+                    src="./images/71dmk2vUjeL._AC_SX466_.jpg"
+                    class="gallery-fullsize"
+                />
+            </div>
+            <div class="gallery-item">
+                <img
+                    src="./images/51auquuzbVL._AC_US40_.jpg"
+                    class="gallery-preview"
+                />
+                <img
+                    src="./images/91YFS9YXDEL._AC_SX466_.jpg"
+                    class="gallery-fullsize"
+                />
+            </div>
+            <div class="gallery-item">
+                <img
+                    src="./images/31pK3XMRYoL._AC_US40_.jpg"
+                    class="gallery-preview"
+                />
+                <img
+                    src="./images/71eA2SvTv+L._AC_SX466_.jpg"
+                    class="gallery-fullsize"
+                />
+            </div>
+        </div>
+    </body>
+</html>

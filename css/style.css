@@ -106,9 +106,22 @@ h1 {
 
 .right-side {
     justify-content: space-between;
-    width: 28%;
+    width: 350px;
     margin-bottom: -5px;
     align-items: center;
+}
+
+.hborder p:nth-child(1){
+    font-size: 12px;
+}
+
+.hborder p:nth-child(2){
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sign-in {
+    width: 140px;
 }
 
 .shopping-cart {
@@ -146,20 +159,20 @@ nav a:hover {
     margin-left: 70px;
 }
 
-.pics-preview {
+.gallery-preview {
     flex-direction: column;
     justify-content: space-between;
     height: 280px;
 }
 
-.pics-preview div {
+.gallery-preview div {
     flex-direction: column;
     width: 40px;
     height: 40px;
     border: 1px solid #ccc;
 }
 
-.pics-preview div:hover {
+.gallery-preview div:hover {
     border: 1px solid #e77600;
 }
 
@@ -167,24 +180,37 @@ nav a:hover {
     height: 460px;
     width: 460px;
     background: url(../images/61j17FjPhtL._AC_SX466_.jpg) no-repeat center;
+    position: relative;
 }
 
-.pics-preview div:nth-child(1) {
+.gallery-fullsize div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gallery-preview div:nth-child(1) {
     background: url(../images/41gT9mzRM8L._AC_US40_.jpg);
 }
-.pics-preview div:nth-child(2) {
+.gallery-preview div:nth-child(2) {
     background: url(../images/41-cQZNga6L._AC_US40_.jpg);
 }
-.pics-preview div:nth-child(3) {
+
+
+.gallery-preview div:nth-child(3) {
     background: url(../images/31zHjKKP0VL._AC_US40_.jpg);
 }
-.pics-preview div:nth-child(4) {
+.gallery-preview div:nth-child(4) {
     background: url(../images/41UJCr4PxcL._AC_US40_.jpg);
 }
-.pics-preview div:nth-child(5) {
+.gallery-preview div:nth-child(5) {
     background: url(../images/51auquuzbVL._AC_US40_.jpg);
 }
-.pics-preview div:nth-child(6) {
+.gallery-preview div:nth-child(6) {
     background: url(../images/31pK3XMRYoL._AC_US40_.jpg);
 }
 
@@ -205,6 +231,7 @@ nav a:hover {
     flex-direction: column;
     border: 1px solid #e7e7e7;
     border-radius: 5px;
+    /* margin-right: 180px; */
 }
 
 .price {
@@ -228,7 +255,12 @@ nav a:hover {
     height: 14px;
 }
 
+.delivery {
+    margin-top: 15px;
+}
+
 .availability {
+    margin-top: 10px;
     font-size: 16px;
     color: #c45500;
 }
@@ -265,6 +297,7 @@ select {
     border-radius: 25px;
     border: none;
     background: #FFD814;
+    margin: 5px 0;
 }
 
 .add-to-cart-button:hover {
@@ -277,6 +310,7 @@ select {
     border-radius: 25px;
     border: none;
     background: #FFA41C;
+    margin: 5px 0;
 }
 
 .buy-now-button:hover {
@@ -292,6 +326,7 @@ select {
 .secure-transaction {
     width: 206px;
     flex-direction: row;
+    margin-top: 5px;
 }
 
 /* Sprite */
